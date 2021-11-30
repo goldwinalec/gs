@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Roboto-Medium.woff2") format("woff2"), url("/fonts/Roboto-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Montserrat-Medium.woff2") format("woff2"), url("/fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Semibold";
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Montserrat-Semibold.woff2") format("woff2"), url("/fonts/Montserrat-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Montserrat-Bold.woff2") format("woff2"), url("/fonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("/fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MontserratAlternates-Medium";
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/MontserratAlternates-Medium.woff2") format("woff2"), url("/fonts/MontserratAlternates-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MontserratAlternates-Semibold";
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/MontserratAlternates-Semibold.woff2") format("woff2"), url("/fonts/MontserratAlternates-Semibold.woff") format("woff");
+}
+
+body {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  line-height: 1.73;
+  color: #72777c;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 45px;
+  margin: 0 auto;
+}

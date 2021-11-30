@@ -1,0 +1,39 @@
+@import 'fonts';
+@import 'vars';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  @extend %montserrat-regular;
+  font-size: 15px;
+  line-height: 1.73;
+  color: #72777c;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1260px;
+  padding: 0 45px;
+  margin: 0 auto;
+}
+
+@import 'media';

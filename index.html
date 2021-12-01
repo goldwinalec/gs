@@ -1,16 +1,519 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GramStar</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img
+            src="/images/top-logo.svg"
+            alt="GramStar"
+            width="236"
+            class="header__logo"
+          />
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="" class="header__link">Описание</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Как работает</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">ЧАВо</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__btn-group">
+            <a href="" class="header__btn">Войти</a>
+            <a href="" class="header__btn">Бесплатный старт</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__text">
+              <h1 class="hero__title title">
+                <img
+                  src="/images/h1.svg"
+                  alt="+4000 подписчиков"
+                  width="665"
+                />для вашего аккаунта в Инстаграм за год использования GramStar
+                всего за 43 рубля в день
+              </h1>
+              <div class="hero__btn-group">
+                <a href="#" class="hero__btn btn">попробовать бесплатно</a>
+                <span class="hero__text">
+                  <span class="hero__text--bold"
+                    >Экономьте до 50000 рублей в месяц</span
+                  >
+                  на рекламе и получайте более 50 клиентов ежемесячно
+                </span>
+              </div>
+            </div>
+            <img
+              src="/images/hero-phone.png"
+              alt="+4000 подписчиков для вашего аккаунта в Инстаграм за год использования GramStar всего за 43 рубля в день"
+              class="hero__phone"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <h2 class="features__title title">
+            Почему GramStar лучший сервис для продвижения в Instagram на рынке
+          </h2>
+          <div class="features__items">
+            <div class="features__item">
+              <h3 class="features__item-title">
+                Не требует никаких паролей и подтверждений
+              </h3>
+              <p class="features__item-text">
+                Вся работа сервиса выполняется через расширение в браузере и
+                родную авторизованную сессию
+              </p>
+            </div>
+            <div class="features__item">
+              <h3 class="features__item-title">
+                Надежный и безопасный, как швейцарские часы
+              </h3>
+              <p class="features__item-text">
+                Сервис будет автоматически безопасно совершать действия с учетом
+                всех лимитов Инстаграм. Забудьте про блокировки, верификации и
+                перезапуск задач
+              </p>
+            </div>
+            <div class="features__item">
+              <h3 class="features__item-title">
+                Лучшее соотношение цены и качества на рынке
+              </h3>
+              <p class="features__item-text">
+                Всего за 43 рубля в день вы ежедневно будете получать новых
+                подписчиков, клиентов и заказы ваших товаров
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <div class="steps__inner">
+            <h2 class="steps__title title">
+              4 простых шага чтобы получить новых подписчиков и клиентов
+            </h2>
+            <p class="steps__text">
+              Запуск сервиса не требует специальных знаний и с ним справится
+              любой пользователь Инстаграм. Вам нужен только компьютер и
+              браузер.
+            </p>
+            <div class="swiper">
+              <div class="steps__items swiper-wrapper">
+                <div class="steps__item swiper-slide">
+                  <span class="steps__number">01</span>
+                  <h3 class="steps__item-title">
+                    Регистрация и добавление аккаунта без ввода пароля
+                  </h3>
+                  <p class="steps__item-text">
+                    Пройдите простую регистрацию на сервисе, укажите логин
+                    аккаунта, который будете продвигать с помощью нашего
+                    сервиса.
+                  </p>
+                  <p class="steps__item-text">
+                    Вам не нужно предоставлять нам пароль и другие личные
+                    данные, для работы Gramstar они не нужны.
+                  </p>
+                </div>
+                <div class="steps__item swiper-slide">
+                  <span class="steps__number">02</span>
+                  <h3 class="steps__item-title">
+                    Установите расширение и авторизуйтесь в Инстаграм через ваш
+                    браузер
+                  </h3>
+                  <p class="steps__item-text">
+                    Скачайте и установите расширение через официальный магазин
+                    расширений вашего браузера, пройдите авторизацию в
+                    Инстаграм. Сервис синхронизируется с вашей сессией и будет
+                    готов к продвижению.
+                  </p>
+                </div>
+                <div class="steps__item swiper-slide">
+                  <span class="steps__number">03</span>
+                  <h3 class="steps__item-title">Настройка работы сервиса</h3>
+                  <p class="steps__item-text">
+                    Выберите лайки и/или подписки, а также настройте таргетинг
+                    по конкурентам или геолокации. Gramstar найдет целевую
+                    аудиторию, которой будет интересен ваш аккаунт.
+                  </p>
+                </div>
+                <div class="steps__item swiper-slide">
+                  <span class="steps__number">04</span>
+                  <h3 class="steps__item-title">
+                    Запустите продвижение и наслаждайтесь результатами
+                  </h3>
+                  <p class="steps__item-text">
+                    Вот и все. Сервис работает, а вы наслаждаетесь результатами
+                    продвижения. Вы ежедневно получаете новых подписчиков,
+                    клиентов и заказы ваших товаров.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="check">
+        <div class="container">
+          <div class="check__inner">
+            <h2 class="check__title title">
+              Узнайте сколько подписчиков получит ваш Инстаграм аккаунт с
+              помощью GramStar:
+            </h2>
+            <form class="check__form">
+              <input
+                class="check__input"
+                type="text"
+                id="input"
+                placeholder="@youraccount"
+              />
+              <button class="check__btn" type="submit">Проверить</button>
+              <label for="input"
+                >Введите логин аккаунта и нажмите “Проверить”</label
+              >
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="possibs">
+        <div class="container">
+          <h2 class="possibs__title title">Возможности сервиса</h2>
+          <div class="possibs__inner">
+            <img
+              src="/images/possibilities-phone.png"
+              alt="Возможности сервиса"
+              class="possibs-phone"
+            />
+            <div class="possibs__swiper">
+              <div class="possibs__items possibs__wrapper">
+                <div class="possibs__item possibs__slide">
+                  <h3 class="possibs__item-title">
+                    Подписка на целевую аудиторию
+                  </h3>
+                  <p class="possibs__item-text">
+                    Сервис делает подписки с вашего аккаунта по выбранной вами
+                    аудитории. Пользователи видят, что вы на них подписались и,
+                    если им интересен ваш аккаунт, то они подписываются в ответ.
+                  </p>
+                </div>
+                <div class="possibs__item possibs__slide">
+                  <h3 class="possibs__item-title">Отписка от невзаимных</h3>
+                  <p class="possibs__item-text">
+                    Функция нужна для периодической чистки исходящих подписок.
+                    На одном Instagram аккаунте есть ограничение по их
+                    количеству, на данный момент это 7500 подписок. Сервис
+                    отпишется от тех, кто не подписался на вас в ответ.
+                  </p>
+                </div>
+                <div class="possibs__item possibs__slide">
+                  <h3 class="possibs__item-title">
+                    Улучшение статистики вашего аккаунта
+                    <span class="possibs__item--soon">Скоро</span>
+                  </h3>
+                  <p class="possibs__item-text">
+                    Сервис предоставит вам дополнительных подписчиков, лайки и
+                    посещения профиля для того, чтобы помочь аккаунту на старте
+                    и показать новой аудитории активность на аккаунте.
+                  </p>
+                </div>
+                <div class="possibs__item possibs__slide">
+                  <h3 class="possibs__item-title">
+                    Гибкая настройка таргетинга
+                  </h3>
+                  <p class="possibs__item-text">
+                    С помощью сервиса вы сможете сфокусироваться именно на той
+                    аудитории, которой вы интересны. Выберите пользователей из
+                    вашего города или используйте аудиторию ваших конкурентов.
+                  </p>
+                </div>
+                <div class="possibs__item possibs__slide">
+                  <h3 class="possibs__item-title">Лайкинг целевой аудитории</h3>
+                  <p class="possibs__item-text">
+                    GramStar лайкает с вашего аккаунта публикации пользователей,
+                    которых вы выбрали. Функция также приводит подписчиков, но
+                    больше подходит для привлечения ответных лайков, а также
+                    усиливает эффект от подписки.
+                  </p>
+                </div>
+                <div class="possibs__item possibs__slide">
+                  <h3 class="possibs__item-title">
+                    Автоматическая отправка приветственных сообщений
+                    <span class="possibs__item--soon">Скоро</span>
+                  </h3>
+                  <p class="possibs__item-text">
+                    GramStar поздоровается с новым подписчиком за вас и
+                    расскажет ему об актуальных акциях и предложениях. Начало
+                    коммуникации - это отличный инструмент, который позволит
+                    запустить продажи.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <a href="#" class="possibs__btn btn">попробовать бесплатно</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__title title">Отзывы пользователей</h2>
+          <div class="feedback__inner feedback__swiper">
+            <div class="feedback__items feedback__wrapper">
+              <div class="feedback__item feedback__slide">
+                <img
+                  src="/images/author-1.jpg"
+                  alt=""
+                  class="feedback__author-img"
+                />
+                <div class="feedback__text">
+                  <p class="feedback__author-name">Екатерина, PR-менеджер</p>
+                  <p class="feedback__author-text">
+                    Могу сказать, что со своей работой Зенграм справляется.
+                    Действительно раскручивает профиль без ботов и пустышек. Но
+                    для работы с ним нужно уже иметь представление о своей ЦА и
+                    ее интересах, чтобы деньги не улетели впустую. Тех.
+                    поддержка работает исправно, помогли мне решить некоторые
+                    трудности. Могу рекомендовать для тех, кто устал от ручного
+                    мф и мл.
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__item feedback__slide">
+                <img
+                  src="/images/author-2.jpg"
+                  alt=""
+                  class="feedback__author-img"
+                />
+                <div class="feedback__text">
+                  <p class="feedback__author-name">Екатерина, PR-менеджер</p>
+                  <p class="feedback__author-text">
+                    Могу сказать, что со своей работой Зенграм справляется.
+                    Действительно раскручивает профиль без ботов и пустышек. Но
+                    для работы с ним нужно уже иметь представление о своей ЦА и
+                    ее интересах, чтобы деньги не улетели впустую. Тех.
+                    поддержка работает исправно, помогли мне решить некоторые
+                    трудности. Могу рекомендовать для тех, кто устал от ручного
+                    мф и мл.
+                  </p>
+                </div>
+              </div>
+              <div class="feedback__item feedback__slide">
+                <img
+                  src="/images/author-3.jpg"
+                  alt=""
+                  class="feedback__author-img"
+                />
+                <div class="feedback__text">
+                  <p class="feedback__author-name">Екатерина, PR-менеджер</p>
+                  <p class="feedback__author-text">
+                    Могу сказать, что со своей работой Зенграм справляется.
+                    Действительно раскручивает профиль без ботов и пустышек. Но
+                    для работы с ним нужно уже иметь представление о своей ЦА и
+                    ее интересах, чтобы деньги не улетели впустую. Тех.
+                    поддержка работает исправно, помогли мне решить некоторые
+                    трудности. Могу рекомендовать для тех, кто устал от ручного
+                    мф и мл.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <h2 class="faq__title title">Частые вопросы</h2>
+          <div class="faq__items">
+            <div class="faq__item">
+              <div class="faq__question">
+                Насколько эффективен способ взаимных подписок и лайков?
+                <span class="faq__btn"
+                  ><img
+                    src="/images/arrow-left.svg"
+                    alt="Развернуть/Свернуть"
+                    class="faq__btn-img"
+                /></span>
+              </div>
+              <div class="faq__answer">
+                Душа моя озарена неземной радостью, как эти чудесные весенние
+                утра, которыми я наслаждаюсь от всего сердца. Я совсем один и
+                блаженствую в здешнем краю, словно созданном для таких, как я. Я
+                так счастлив, мой друг, так упоен ощущением покоя, что искусство
+                мое страдает от этого. Ни одного штриха не мог бы я сделать, а
+                никогда не был таким большим художником, как в эти минуты. Когда
+                от милой моей долины поднимается пар и полдневное солнце стоит
+                над непроницаемой чащей темного леса и лишь редкий луч
+                проскальзывает в его святая святых.
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__question">
+                Как происходит работа расширения GramStar?
+                <span class="faq__btn"
+                  ><img
+                    src="/images/arrow-left.svg"
+                    alt="Развернуть/Свернуть"
+                    class="faq__btn-img"
+                /></span>
+              </div>
+              <div class="faq__answer">
+                Душа моя озарена неземной радостью, как эти чудесные весенние
+                утра, которыми я наслаждаюсь от всего сердца. Я совсем один и
+                блаженствую в здешнем краю, словно созданном для таких, как я. Я
+                так счастлив, мой друг, так упоен ощущением покоя, что искусство
+                мое страдает от этого. Ни одного штриха не мог бы я сделать, а
+                никогда не был таким большим художником, как в эти минуты. Когда
+                от милой моей долины поднимается пар и полдневное солнце стоит
+                над непроницаемой чащей темного леса и лишь редкий луч
+                проскальзывает в его святая святых.
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__question">
+                Банит ли Instagram профили за накручивание подписчиков и лайков?
+                <span class="faq__btn"
+                  ><img
+                    src="/images/arrow-left.svg"
+                    alt="Развернуть/Свернуть"
+                    class="faq__btn-img"
+                /></span>
+              </div>
+              <div class="faq__answer">
+                Душа моя озарена неземной радостью, как эти чудесные весенние
+                утра, которыми я наслаждаюсь от всего сердца. Я совсем один и
+                блаженствую в здешнем краю, словно созданном для таких, как я. Я
+                так счастлив, мой друг, так упоен ощущением покоя, что искусство
+                мое страдает от этого. Ни одного штриха не мог бы я сделать, а
+                никогда не был таким большим художником, как в эти минуты. Когда
+                от милой моей долины поднимается пар и полдневное солнце стоит
+                над непроницаемой чащей темного леса и лишь редкий луч
+                проскальзывает в его святая святых.
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__question">
+                Какой контент эффективнее всего продвигать блогерам?
+                <span class="faq__btn"
+                  ><img
+                    src="/images/arrow-left.svg"
+                    alt="Развернуть/Свернуть"
+                    class="faq__btn-img"
+                /></span>
+              </div>
+              <div class="faq__answer">
+                Душа моя озарена неземной радостью, как эти чудесные весенние
+                утра, которыми я наслаждаюсь от всего сердца. Я совсем один и
+                блаженствую в здешнем краю, словно созданном для таких, как я. Я
+                так счастлив, мой друг, так упоен ощущением покоя, что искусство
+                мое страдает от этого. Ни одного штриха не мог бы я сделать, а
+                никогда не был таким большим художником, как в эти минуты. Когда
+                от милой моей долины поднимается пар и полдневное солнце стоит
+                над непроницаемой чащей темного леса и лишь редкий луч
+                проскальзывает в его святая святых.
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__question">
+                Как раскрутить Инсту максимально эффективно?
+                <span class="faq__btn"
+                  ><img
+                    src="/images/arrow-left.svg"
+                    alt="Развернуть/Свернуть"
+                    class="faq__btn-img"
+                /></span>
+              </div>
+              <div class="faq__answer">
+                Душа моя озарена неземной радостью, как эти чудесные весенние
+                утра, которыми я наслаждаюсь от всего сердца. Я совсем один и
+                блаженствую в здешнем краю, словно созданном для таких, как я. Я
+                так счастлив, мой друг, так упоен ощущением покоя, что искусство
+                мое страдает от этого. Ни одного штриха не мог бы я сделать, а
+                никогда не был таким большим художником, как в эти минуты. Когда
+                от милой моей долины поднимается пар и полдневное солнце стоит
+                над непроницаемой чащей темного леса и лишь редкий луч
+                проскальзывает в его святая святых.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="container">
+          <span class="cta__text">Для тех, кто хочет попробовать...</span>
+          <h2 class="cta__title title"><img src="" alt="" />бесплатно</h2>
+          <p class="cta__action">
+            Регистрируйтесь сейчас и пользуйтесь сервисом 3 дня бесплатно!
+          </p>
+          <a href="#" class="cta__btn btn">попробовать бесплатно</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <img
+            src="/images/footer-logo.svg"
+            alt="GramStar"
+            class="footer__logo"
+          />
+          <div class="footer__links">
+            <a href="" class="footer__link">Правила сайта</a>
+            <a href="" class="footer__link">Обратная связь</a>
+            <a href="tel:+74994441320" class="footer__link"
+              >+7 (499) 444-13-20</a
+            >
+            <span class="footer__copyright"
+              >© 2021 GramStar. Все права защищены</span
+            >
+          </div>
+          <div class="footer__info">
+            <span class="footer__text"
+              >Адрес:
+              <address class="footer__address">
+                Пресненская наб., 12, БЦ Москва, 123317
+              </address></span
+            >
+            <span class="footer__text">
+              Индивидуальный предприниматель <br />
+              Дудик Анатолий Анатольевич <br />
+              ИНН 391601492516 <br />
+              ОГРНИП 318392600040290
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="/js/script.js"></script>
-</body>
+  </body>
 </html>

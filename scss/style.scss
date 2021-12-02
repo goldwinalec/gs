@@ -12,6 +12,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
+  background-color: #fff;
   @extend %montserrat-regular;
   font-size: 15px;
   line-height: 1.73;
@@ -243,7 +244,22 @@ p {
 .steps {
   margin-top: 103px;
 }
+.steps__inner::before {
+  position: absolute;
+  content: '';
+  width: 1475px;
+  height: 478px;
+  bottom: 90px;
+  left: 77px;
+  background-image: url('/images/steps-bg.svg');
+  background-size: contain;
+}
+.steps__swiper {
+  margin-left: 70px;
+}
 .steps__inner {
+  position: relative;
+  overflow: visible;
   padding-left: 77px;
 }
 .steps__title::before {
@@ -257,11 +273,13 @@ p {
   margin-top: 32px;
 }
 .steps__item {
+  padding: 30px 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .steps__item-wrapper {
+  margin-top: 40px;
   max-width: 400px;
 }
 .steps__number,
@@ -298,6 +316,71 @@ p {
   left: -28px;
   background-image: url('/images/steps-line.svg');
   z-index: 1;
+}
+.swiper {
+  padding: 20px 0;
+  width: 100%;
+  height: 100%;
+}
+.swiper-controls {
+  position: absolute;
+  left: 0;
+  bottom: 68px;
+  z-index: 1;
+}
+.swiper-pagination {
+  position: static;
+  display: inline-block;
+}
+.swiper-pagination-bullet {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  @extend %montserrat-bold;
+  line-height: 44px;
+  font-size: 15px;
+  color: $gray;
+  opacity: 1;
+  background: #fff;
+  box-shadow: 0px 8px 10px rgba(158, 153, 185, 0.25);
+  transition: all 0.3s;
+}
+.swiper-pagination-bullet:hover {
+  background: #f3f4f5;
+  box-shadow: 0px 2px 5px rgba(158, 153, 185, 0.25);
+}
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet-active:hover {
+  color: #fff;
+  background: $blue;
+  box-shadow: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0px 8px 10px rgba(158, 153, 185, 0.25);
+  transition: all 0.3s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: $blue;
+  box-shadow: none;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: '';
+  font-size: 0;
+}
+.swiper-button-prev:hover img,
+.swiper-button-next:hover img {
+  filter: invert(100%);
 }
 .check {
   margin-top: 125px;

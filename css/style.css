@@ -517,7 +517,7 @@ p {
 
 .swiper-pagination {
   position: static;
-  display: inline-block;
+  display: inline;
 }
 
 .swiper-pagination-bullet {

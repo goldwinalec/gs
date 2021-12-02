@@ -68,13 +68,13 @@
   src: url("/fonts/MontserratAlternates-Semibold.woff2") format("woff2"), url("/fonts/MontserratAlternates-Semibold.woff") format("woff");
 }
 
-body {
+body, .possibs__item--soon {
   font-family: 'Montserrat-Regular', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
-.features__item-title {
+.features__item-title, .possibs__item-title {
   font-family: 'Montserrat-Semibold', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -575,4 +575,92 @@ p {
 
 .check__btn:hover {
   background: radial-gradient(130% 349.75% at -19.8% -19.8%, #fcb045 0%, #fd1d1d 5.21%, #833ab4 10.42%);
+}
+
+.possibs {
+  margin-top: 109px;
+  background-image: url("/images/possibilities-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.possibs__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  padding-left: 77px;
+}
+
+.possibs__title {
+  margin-left: 77px;
+}
+
+.possibs__title::before {
+  background-image: url("/images/possibilities-title.png");
+}
+
+.possibs__swiper {
+  margin-left: 50px;
+}
+
+.possibs__img {
+  display: block;
+  width: 289px;
+}
+
+.possibs__items {
+  margin-top: 56px;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.possibs__item {
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid-column;
+}
+
+.possibs__item + .possibs__item {
+  margin-top: 34px;
+}
+
+.possibs__item-title {
+  position: relative;
+  color: #161718;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.possibs__item-text {
+  margin-top: 12px;
+}
+
+.possibs__item--soon {
+  position: absolute;
+  top: -7px;
+  right: 0;
+  color: #5839ff;
+  font-size: 15px;
+}
+
+.possibs__btn {
+  margin-top: 68px;
+}
+
+.feedback {
+  margin-top: 143px;
+}
+
+.feedback__title,
+.feedback__inner {
+  margin-left: 77px;
 }

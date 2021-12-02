@@ -390,4 +390,70 @@ p {
     #833ab4 10.42%
   );
 }
+.possibs {
+  margin-top: 109px;
+  background-image: url('/images/possibilities-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.possibs__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-left: 77px;
+}
+.possibs__title {
+  margin-left: 77px;
+}
+.possibs__title::before {
+  background-image: url('/images/possibilities-title.png');
+}
+.possibs__swiper {
+  margin-left: 50px;
+}
+.possibs__img {
+  display: block;
+  width: 289px;
+}
+.possibs__items {
+  margin-top: 56px;
+  column-count: 2;
+  column-gap: 30px;
+}
+.possibs__item {
+  break-inside: avoid-column;
+}
+.possibs__item + .possibs__item {
+  margin-top: 34px;
+}
+.possibs__item-title {
+  position: relative;
+  @extend %montserrat-semibold;
+  color: $black;
+  font-size: 20px;
+  line-height: 1.45;
+}
+.possibs__item-text {
+  margin-top: 12px;
+}
+.possibs__item--soon {
+  position: absolute;
+  top: -7px;
+  right: 0;
+  @extend %montserrat-regular;
+  color: $purple;
+  font-size: 15px;
+}
+.possibs__btn {
+  margin-top: 68px;
+}
+.feedback {
+  margin-top: 143px;
+}
+.feedback__title,
+.feedback__inner {
+  margin-left: 77px;
+}
 @import 'media';

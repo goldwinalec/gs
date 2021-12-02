@@ -80,7 +80,8 @@ body {
   font-weight: 600;
 }
 
-.btn, .hero__btn-text--bold, .steps__number {
+.btn, .hero__btn-text--bold, .steps__number,
+.steps__item-title {
   font-family: 'Montserrat-Bold', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -400,4 +401,82 @@ p {
 
 .steps__swiper {
   margin-top: 32px;
+}
+
+.steps__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps__item-wrapper {
+  max-width: 400px;
+}
+
+.steps__number,
+.steps__item-title {
+  font-size: 26px;
+  line-height: 1.46;
+}
+
+.steps__number {
+  color: #397dff;
+}
+
+.steps__item-title {
+  margin-top: 10px;
+  color: #161718;
+}
+
+.steps__item-text {
+  margin-top: 14px;
+}
+
+.steps__item-img {
+  display: block;
+  width: 570px;
+  border-radius: 26px 26px 26px 26px;
+  -webkit-box-shadow: 0px 10px 25px rgba(153, 160, 185, 0.35);
+          box-shadow: 0px 10px 25px rgba(153, 160, 185, 0.35);
+}
+
+.steps__item-figure {
+  position: relative;
+}
+
+.steps__item-figure::before {
+  position: absolute;
+  content: '';
+  width: 612px;
+  height: 536px;
+  top: -31px;
+  left: -28px;
+  background-image: url("/images/steps-line.svg");
+  z-index: 1;
+}
+
+.check {
+  margin-top: 125px;
+}
+
+.check__inner {
+  margin-left: 77px;
+  padding: 159px 140px 159px 107px;
+}
+
+.check__title {
+  max-width: 652px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.46;
+}
+
+.check__title--purple {
+  color: #5839ff;
 }

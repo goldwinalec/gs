@@ -408,8 +408,15 @@ p {
   height: 478px;
   bottom: 90px;
   left: 77px;
-  background-image: url("/images/steps-bg.svg");
+  background-color: #f1f3ff;
+  border-radius: 56px 0 0 56px;
   background-size: contain;
+}
+
+@media (min-width: 1921px) {
+  .steps__inner::before {
+    width: 2000px;
+  }
 }
 
 .steps__swiper {

@@ -720,7 +720,10 @@ p {
   width: 66px;
   height: 66px;
   border-radius: 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  overflow: hidden;
+}
+
+.feedback__author-img {
+  width: 66px;
+  margin-top: -25%;
 }

@@ -49,11 +49,12 @@ p {
   display: inline-block;
   padding: 20px 36px 21px;
   background: radial-gradient(
-    130% 349.75% at -19.8% -19.8%,
+    130% 360.75% at -19.8% -19.8%,
     #fcb045 17.75%,
-    #fd1d1d 42.91%,
-    #833ab4 86.54%
+    #fd1d1d 28.91%,
+    #833ab4 55%
   );
+  background-size: 200% 200%;
   box-shadow: 0px 15px 25px rgba(88, 57, 255, 0.25);
   border-radius: 12px;
   text-transform: uppercase;
@@ -63,15 +64,11 @@ p {
   line-height: 1.5;
   letter-spacing: 0.06em;
   color: #fff;
+  transition: background-position 0.7s;
 }
 
 .btn:hover {
-  background: radial-gradient(
-    130% 349.75% at -19.8% -19.8%,
-    #fcb045 0%,
-    #fd1d1d 5.21%,
-    #833ab4 10.42%
-  );
+  background-position: 100% 0;
 }
 
 .title {
@@ -364,11 +361,13 @@ p {
   letter-spacing: 0.06em;
   color: #fff;
   background: radial-gradient(
-    130% 349.75% at -19.8% -19.8%,
+    130% 360.75% at -19.8% -19.8%,
     #fcb045 17.75%,
-    #fd1d1d 42.91%,
-    #833ab4 86.54%
+    #fd1d1d 28.91%,
+    #833ab4 55%
   );
+  background-size: 200% 200%;
+  transition: background-position 0.7s;
   box-shadow: 0px 15px 25px rgba(88, 57, 255, 0.25);
   border: none;
   border-radius: 12px;
@@ -384,12 +383,7 @@ p {
   background: #d9ccde;
 }
 .check__btn:hover {
-  background: radial-gradient(
-    130% 349.75% at -19.8% -19.8%,
-    #fcb045 0%,
-    #fd1d1d 5.21%,
-    #833ab4 10.42%
-  );
+  background-position: 100% 0;
 }
 .possibs {
   margin-top: 109px;
@@ -569,16 +563,17 @@ p {
   @extend %montserratal-medium;
   font-size: 26px;
   line-height: 1.46;
-  // letter-spacing: 0.06em;
   color: #fff;
 }
 .cta__btn {
   margin-top: 37px;
-  background: radial-gradient(100% 207.05% at 0% 0%, #ffffff 0%, #ffbf65 100%);
+  background: radial-gradient(100% 207.05% at 0% 0%, #ffffff 0%, #ffbf65 50%);
+  background-size: 200% 200%;
+  transition: background-position 0.7s;
   color: $black;
 }
 .cta__btn:hover {
-  background: #ffbf65;
+  background-position: 100% 0;
 }
 .footer {
   padding-top: 25px;

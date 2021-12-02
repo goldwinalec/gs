@@ -17,3 +17,15 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
+
+const feedbackSwiper = new Swiper('.feedback__swiper', {
+  loop: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  navigation: {
+    nextEl: '.feedback-button-next',
+    prevEl: '.feedback-button-prev',
+  },
+});

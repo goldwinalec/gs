@@ -319,7 +319,7 @@ p {
   width: 612px;
   height: 536px;
   top: -31px;
-  left: -28px;
+  left: -29px;
   background-image: url('/images/steps-line.svg');
   z-index: 1;
 }
@@ -548,6 +548,7 @@ p {
   margin-left: 77px;
 }
 .feedback__inner {
+  position: relative;
   margin-top: 59px;
 }
 .feedback__title::before {
@@ -582,6 +583,43 @@ p {
   width: 66px;
   margin-top: -25%;
 }
+.feedback__controls {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.feedback-button-prev,
+.feedback-button-next {
+  position: static;
+  display: inline-block;
+  padding: 16px 17px;
+  width: 44px;
+  height: 44px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 50%;
+  background: #ebeff3;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.feedback-button-prev {
+  padding-right: 19px;
+}
+.feedback-button-next {
+  margin-left: 12px;
+  padding-left: 19px;
+}
+.feedback-button-prev:hover,
+.feedback-button-next:hover {
+  background-color: $blue;
+}
+.feedback-button-prev:hover img,
+.feedback-button-next:hover img {
+  filter: invert(100%);
+}
+
 .faq {
   margin-top: 143px;
 }

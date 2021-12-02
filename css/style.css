@@ -74,6 +74,12 @@ body, .possibs__item--soon {
   font-weight: 400;
 }
 
+.feedback__author-name {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
 .features__item-title, .possibs__item-title {
   font-family: 'Montserrat-Semibold', sans-serif;
   font-style: normal;
@@ -672,4 +678,49 @@ p {
 .feedback__title,
 .feedback__inner {
   margin-left: 77px;
+}
+
+.feedback__inner {
+  margin-top: 59px;
+}
+
+.feedback__title::before {
+  background-image: url("/images/feedback-title.png");
+}
+
+.feedback__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.feedback__text {
+  margin-top: 15px;
+  margin-left: 30px;
+  max-width: 700px;
+}
+
+.feedback__author-name {
+  font-size: 26px;
+  line-height: 1.46;
+  color: #161718;
+}
+
+.feedback__author-text {
+  margin-top: 14px;
+}
+
+.feedback__figure {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

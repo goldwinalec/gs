@@ -464,4 +464,38 @@ p {
 .feedback__inner {
   margin-left: 77px;
 }
+.feedback__inner {
+  margin-top: 59px;
+}
+.feedback__title::before {
+  background-image: url('/images/feedback-title.png');
+}
+.feedback__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.feedback__text {
+  margin-top: 15px;
+  margin-left: 30px;
+  max-width: 700px;
+}
+.feedback__author-name {
+  @extend %montserrat-medium;
+  font-size: 26px;
+  line-height: 1.46;
+  color: $black;
+}
+.feedback__author-text {
+  margin-top: 14px;
+}
+.feedback__figure {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @import 'media';

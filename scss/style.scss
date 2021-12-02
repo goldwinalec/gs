@@ -65,6 +65,15 @@ p {
   color: #fff;
 }
 
+.btn:hover {
+  background: radial-gradient(
+    130% 349.75% at -19.8% -19.8%,
+    #fcb045 0%,
+    #fd1d1d 5.21%,
+    #833ab4 10.42%
+  );
+}
+
 .title {
   position: relative;
   max-width: 763px;
@@ -298,8 +307,13 @@ p {
 .check__inner {
   margin-left: 77px;
   padding: 159px 140px 159px 107px;
+  background-image: url('/images/check-bg.svg');
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .check__title {
+  margin: 0 auto;
   max-width: 652px;
   text-align: center;
   font-size: 26px;
@@ -307,5 +321,73 @@ p {
 }
 .check__title--purple {
   color: $purple;
+}
+.check__inner--done {
+  display: none;
+}
+.check__process {
+  display: none;
+}
+.check__form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 31px;
+}
+.check__input {
+  padding: 16px;
+  width: 399px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: none;
+}
+.check__input::placeholder {
+  color: $gray;
+}
+.check__label {
+  position: absolute;
+  bottom: -38px;
+  left: 140px;
+  color: $black;
+}
+.check__btn {
+  margin-left: 20px;
+  padding: 17px 38px;
+  width: 173px;
+  height: 56px;
+  @extend %montserrat-bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background: radial-gradient(
+    130% 349.75% at -19.8% -19.8%,
+    #fcb045 17.75%,
+    #fd1d1d 42.91%,
+    #833ab4 86.54%
+  );
+  box-shadow: 0px 15px 25px rgba(88, 57, 255, 0.25);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.check__btn:disabled {
+  background: #d9ccde;
+  box-shadow: none;
+  color: $gray;
+  cursor: not-allowed;
+}
+.check__btn:disabled:hover {
+  background: #d9ccde;
+}
+.check__btn:hover {
+  background: radial-gradient(
+    130% 349.75% at -19.8% -19.8%,
+    #fcb045 0%,
+    #fd1d1d 5.21%,
+    #833ab4 10.42%
+  );
 }
 @import 'media';

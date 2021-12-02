@@ -169,6 +169,7 @@ p {
   font-size: 35px;
   line-height: 1.46;
   color: #161718;
+  z-index: 1;
 }
 
 .title::before {
@@ -583,6 +584,14 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+@media (min-width: 1950px) {
+  .possibs {
+    padding: 40px 0;
+    background-image: none;
+    background-color: #fff3ef;
+  }
 }
 
 .possibs__inner {

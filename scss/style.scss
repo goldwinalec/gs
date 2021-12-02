@@ -541,4 +541,47 @@ p {
   padding-right: 114px;
   color: $black;
 }
+.cta {
+  margin-top: 106px;
+  padding-bottom: 240px;
+  min-height: 890px;
+  background-image: url('/images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.cta__text {
+  padding-top: 50px;
+  margin-left: 118px;
+  color: $black;
+}
+.cta__title {
+  margin-top: 301px;
+  margin-left: 43px;
+}
+.cta__action,
+.cta__btn {
+  margin-left: 270px;
+}
+.cta__action {
+  margin-top: 3px;
+  max-width: 373px;
+  @extend %montserratal-medium;
+  font-size: 26px;
+  line-height: 1.46;
+  // letter-spacing: 0.06em;
+  color: #fff;
+}
+.cta__btn {
+  margin-top: 37px;
+  background: radial-gradient(100% 207.05% at 0% 0%, #ffffff 0%, #ffbf65 100%);
+  color: $black;
+}
+.cta__btn:hover {
+  background: #ffbf65;
+}
+.footer {
+  padding-top: 25px;
+  background-color: $black;
+}
 @import 'media';

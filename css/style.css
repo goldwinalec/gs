@@ -93,7 +93,7 @@ body, .possibs__item--soon {
   font-weight: 700;
 }
 
-.hero__title {
+.hero__title, .cta__action {
   font-family: 'MontserratAlternates-Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -774,4 +774,53 @@ p {
   padding-left: 40px;
   padding-right: 114px;
   color: #161718;
+}
+
+.cta {
+  margin-top: 106px;
+  padding-bottom: 240px;
+  min-height: 890px;
+  background-image: url("/images/cta-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.cta__text {
+  padding-top: 50px;
+  margin-left: 118px;
+  color: #161718;
+}
+
+.cta__title {
+  margin-top: 301px;
+  margin-left: 43px;
+}
+
+.cta__action,
+.cta__btn {
+  margin-left: 270px;
+}
+
+.cta__action {
+  margin-top: 3px;
+  max-width: 373px;
+  font-size: 26px;
+  line-height: 1.46;
+  color: #fff;
+}
+
+.cta__btn {
+  margin-top: 37px;
+  background: radial-gradient(100% 207.05% at 0% 0%, #ffffff 0%, #ffbf65 100%);
+  color: #161718;
+}
+
+.cta__btn:hover {
+  background: #ffbf65;
+}
+
+.footer {
+  padding-top: 25px;
+  background-color: #161718;
 }

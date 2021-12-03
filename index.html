@@ -14,6 +14,170 @@
   </head>
 
   <body>
+    <div class="overlay"></div>
+    <div class="modal">
+      <div class="modal__register">
+        <img class="close__btn" src="/images/close.svg" alt=""></img>
+        <div class="modal__title">Попробовать бесплатно</div>
+        <div class="modal__text">
+          Укажите свою почту и придумайте пароль, чтобы получить доступ к
+          сервису GramStar.
+        </div>
+        <form class="modal__form form">
+          <div class="form__row">
+            <label class="form__label">Ваша эл.почта</label
+            ><input
+              type="email"
+              class="form__input"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Придумайте пароль</label
+            ><input
+              type="password"
+              class="form__input"
+              minlength="8"
+              placeholder="****"
+              required
+            />
+          </div>
+          <div class="form__submit-group">
+            <button class="form__btn">Зарегистрироваться</button>
+            <div class="form__link" id="login">Уже есть аккаунт?</div>
+          </div>
+        </form>
+        <div class="modal__social social">
+          <div class="social__text">
+            Или зарегистрируйтесь через одну из предложенных соц.сетей.
+          </div>
+          <div class="social__items">
+            <a class="form__item" href="#"
+              ><img
+                class="social__img"
+                src="/images/social-item-1.svg"
+                alt="Facebook"
+            /></a>
+            <a class="form__item" href="#"
+              ><img
+                class="social__img"
+                src="/images/social-item-2.svg"
+                alt="Google"
+            /></a>
+            <a class="form__item" href="#"
+              ><img class="social__img" src="/images/social-item-3.svg" alt="VK"
+            /></a>
+            <a class="form__item" href="#"
+              ><img
+                class="social__img"
+                src="/images/social-item-4.svg"
+                alt="Яндекс"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="modal__login">
+        <img class="close__btn" src="/images/close.svg" alt=""></img>
+        <div class="modal__title">Вход в аккаунт</div>
+        <form class="modal__form form form--login">
+          <div class="form__row">
+            <label class="form__label">Ваша эл.почта</label
+            ><input
+              type="email"
+              class="form__input"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Укажите пароль</label
+            ><input
+              type="password"
+              class="form__input"
+              minlength="8"
+              placeholder="****"
+              required
+            />
+          </div>
+          <div class="form__submit-group">
+            <button class="form__btn form__btn--login">Войти</button>
+            <div class="form__link" id="password">Забыли пароль?</div>
+          </div>
+        </form>
+        <div class="modal__social social">
+          <div class="social__text">
+            Или войдите с помощью соц.сетей
+          </div>
+          <div class="social__items">
+            <a class="form__item" href="#"
+              ><img
+                class="social__img"
+                src="/images/social-item-1.svg"
+                alt="Facebook"
+            /></a>
+            <a class="form__item" href="#"
+              ><img
+                class="social__img"
+                src="/images/social-item-2.svg"
+                alt="Google"
+            /></a>
+            <a class="form__item" href="#"
+              ><img class="social__img" src="/images/social-item-3.svg" alt="VK"
+            /></a>
+            <a class="form__item" href="#"
+              ><img
+                class="social__img"
+                src="/images/social-item-4.svg"
+                alt="Яндекс"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="modal__password">
+        <img class="close__btn" src="/images/close.svg" alt=""></img>
+        <div class="modal__title">Восстановление пароля</div>
+        <div class="modal__text">Укажите почту от аккаунта к которому требуется восстановление пароля.</div>
+        <form class="modal__form form">
+          <div class="form__row">
+            <label class="form__label">Укажите почту</label
+            ><input
+              type="email"
+              class="form__input"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+          <div class="form__submit-group">
+            <button class="form__btn form__btn--password">Восстановить доступ</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal__feedback">
+        <img class="close__btn" src="/images/close.svg" alt=""></img>
+        <div class="modal__title">Обратная связь</div>
+        <div class="modal__text">Задайте свой вопрос и укажите почту, чтобы мы могли вам оперативно ответить.</div>
+        <form class="modal__form form">
+          <div class="form__row">
+            <label class="form__label">Ваша эл.почта</label>
+            <input
+              type="email"
+              class="form__input"
+              placeholder="example@mail.com"
+              required
+            />
+          </div>
+          <div class="form__row">
+            <label class="form__label">Ваше сообщение</label>
+            <textarea class="form__textarea" placeholder="Текст сообщения" required></textarea>
+          </div>
+          <div class="form__submit-group">
+            <button class="form__btn form__btn--feedback">Отправить</button>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -40,8 +204,8 @@
             </ul>
           </nav>
           <div class="header__btn-group">
-            <a href="" class="header__btn">Войти</a>
-            <a href="" class="header__btn">Бесплатный старт</a>
+            <a href="#" class="header__btn" id="login">Войти</a>
+            <a href="#" class="header__btn" id="register">Бесплатный старт</a>
           </div>
         </div>
       </div>
@@ -63,7 +227,7 @@
               >
             </h1>
             <div class="hero__btn-group">
-              <a href="#" class="hero__btn btn">попробовать бесплатно</a>
+              <a href="#" class="hero__btn btn" id="register">попробовать бесплатно</a>
               <span class="hero__btn-text">
                 <span class="hero__btn-text--bold"
                   >Экономьте до 50000 рублей</span
@@ -234,18 +398,83 @@
               получит ваш Инстаграм аккаунт с помощью GramStar:
             </h2>
             <form class="check__form">
-              <input
-                class="check__input"
-                type="text"
-                id="input"
-                placeholder="@youraccount"
-              />
+              <div class="check__form-wrapper">
+                <input
+                  class="check__input"
+                  type="text"
+                  id="input"
+                  placeholder="@youraccount"
+                />
+                <label class="check__label check__label--visible"
+                  >Введите логин аккаунта и нажмите “Проверить”</label
+                >
+                <div class="check__results-wrapper">
+                  <div class="check__result check__result--error">
+                    Аккаунты не найдены
+                  </div>
+                  <div class="check__result check__result--searching">
+                    <img
+                      class="check__loader check__loader--gray"
+                      src="/images/loader-gray.svg"
+                      alt=""
+                    />
+                    Идет поиск, подождите...
+                  </div>
+                  <div class="check__result check__result--found found">
+                    <div class="found__item">
+                      <img
+                        class="found__img"
+                        src="/images/found-item-1.jpg"
+                        alt=""
+                      />
+                      <div class="found__text">
+                        <div class="found__login">cristiano</div>
+                        <div class="found__name">Cristiano Ronaldo</div>
+                      </div>
+                      <button class="found__btn">Выбрать</button>
+                    </div>
+                    <div class="found__item">
+                      <img
+                        class="found__img"
+                        src="/images/found-item-2.jpg"
+                        alt=""
+                      />
+                      <div class="found__text">
+                        <div class="found__login">ronaldinho</div>
+                        <div class="found__name">Ronaldo de Assis Moreira</div>
+                      </div>
+                      <button class="found__btn">Выбрать</button>
+                    </div>
+                    <div class="found__item found__item--add">
+                      <img
+                        class="found__img"
+                        src="/images/found-item-3.jpg"
+                        alt=""
+                      />
+                      <div class="found__text">
+                        <div class="found__login">cristiano.ronaldo7_</div>
+                        <div class="found__name">Cristiano Ronaldo</div>
+                      </div>
+                      <button class="found__btn">Выбрать</button>
+                    </div>
+                    <div class="found__item">
+                      <img
+                        class="found__img"
+                        src="/images/found-item-4.jpg"
+                        alt=""
+                      />
+                      <div class="found__text">
+                        <div class="found__login">ronaldo</div>
+                        <div class="found__name">ronaldo</div>
+                      </div>
+                      <button class="found__btn">Выбрать</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <button class="check__btn" type="submit" disabled>
                 Проверить
               </button>
-              <label for="input" class="check__label"
-                >Введите логин аккаунта и нажмите “Проверить”</label
-              >
             </form>
             <div class="check__process">
               <span class="check__process-text"
@@ -645,7 +874,7 @@
           <p class="cta__action">
             Регистрируйтесь сейчас и пользуйтесь сервисом 3 дня бесплатно!
           </p>
-          <a href="#" class="cta__btn btn">попробовать бесплатно</a>
+          <a href="#" class="cta__btn btn" id="register">попробовать бесплатно</a>
         </div>
       </section>
     </main>
@@ -659,8 +888,8 @@
           />
           <div class="footer__info">
             <div class="footer__row">
-              <a href="" class="footer__link">Правила сайта</a>
-              <a href="" class="footer__link">Обратная связь</a>
+              <a href="#" class="footer__link">Правила сайта</a>
+              <a href="#" class="footer__link" id="feedback-btn">Обратная связь</a>
               <a href="tel:+74994441320" class="footer__link"
                 >+7 (499) 444-13-20</a
               >
@@ -686,6 +915,7 @@
         </div>
       </div>
     </footer>
+
     <script src="/js/swiper-bundle.min.js"></script>
     <script src="/js/accordion.min.js"></script>
     <script src="/js/script.js"></script>

@@ -1,3 +1,5 @@
+'use strict';
+
 const swiper = new Swiper('.swiper', {
   lazy: true,
   loop: true,
@@ -28,4 +30,8 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
     nextEl: '.feedback-button-next',
     prevEl: '.feedback-button-prev',
   },
+});
+
+new Accordion('.faq__items', {
+  openOnInit: [2],
 });

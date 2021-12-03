@@ -65,11 +65,12 @@ p {
   line-height: 1.5;
   letter-spacing: 0.06em;
   color: #fff;
-  transition: background-position 0.7s;
+  transition: all 0.7s;
 }
 
 .btn:hover {
   background-position: 100% 0;
+  box-shadow: none;
 }
 
 .title {
@@ -456,7 +457,7 @@ p {
     #833ab4 55%
   );
   background-size: 200% 200%;
-  transition: background-position 0.7s;
+  transition: all 0.7s;
   box-shadow: 0px 15px 25px rgba(88, 57, 255, 0.25);
   border: none;
   border-radius: 12px;
@@ -473,6 +474,7 @@ p {
 }
 .check__btn:hover {
   background-position: 100% 0;
+  box-shadow: none;
 }
 .possibs {
   margin-top: 109px;
@@ -589,7 +591,6 @@ p {
   top: 0;
   z-index: 1;
 }
-
 .feedback-button-prev,
 .feedback-button-next {
   position: static;
@@ -633,9 +634,11 @@ p {
 .faq__items {
   margin-top: 30px;
 }
+.faq__item + .faq__item {
+  margin-top: 20px;
+}
 .faq__question {
   position: relative;
-  margin-top: 20px;
   padding: 18px 100px 18px 40px;
   width: 100%;
   background-color: $light-gray;
@@ -645,22 +648,44 @@ p {
   line-height: 1.45;
   color: $black;
   cursor: pointer;
+  transition: all 0.3s;
 }
-.faq__question::before {
+.faq__btn {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   content: '';
   width: 44px;
   height: 44px;
   right: 30px;
   top: 10px;
-  background-image: url('/images/faq-arrow.svg');
-  background-position: center;
+  border: 1px solid #c6cbd0;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.faq__item.is-active .faq__btn {
+  transform: rotate(180deg);
+}
+.faq__question:hover {
+  color: $blue;
+}
+.faq__btn svg path {
+  transition: all 0.3s;
+}
+.faq__question:hover .faq__btn svg path {
+  fill: $blue;
+}
+.faq__question:hover .faq__btn {
+  border: 1px solid $black;
 }
 .faq__answer {
-  margin-top: 20px;
   padding-left: 40px;
   padding-right: 114px;
   color: $black;
+}
+.faq__answer-text {
+  padding-top: 20px;
 }
 .cta {
   margin-top: 106px;
@@ -696,11 +721,12 @@ p {
   margin-top: 37px;
   background: radial-gradient(100% 207.05% at 0% 0%, #ffffff 0%, #ffbf65 50%);
   background-size: 200% 200%;
-  transition: background-position 0.7s;
+  transition: all 0.7s;
   color: $black;
 }
 .cta__btn:hover {
   background-position: 100% 0;
+  box-shadow: none;
 }
 .footer {
   padding-top: 25px;

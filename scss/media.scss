@@ -1,1 +1,113 @@
- 
+@media (max-width: 1120px) {
+  .container {
+    padding: 0 27px;
+  }
+  .header__item + .header__item {
+    margin-left: 20px;
+  }
+  .hero__inner {
+    margin-left: 43px;
+  }
+  .hero__title-img {
+    width: 593px;
+  }
+  .features {
+    margin-top: 110px;
+  }
+  .features__inner,
+  .steps__inner,
+  .possibs__inner {
+    padding-left: 0;
+  }
+  .title::before {
+    top: -70px;
+    left: 0;
+  }
+  .features__item + .features__item {
+    margin-left: 35px;
+  }
+  .steps {
+    margin-top: 184px;
+  }
+  .steps__swiper,
+  .check__inner,
+  .possibs__title,
+  .possibs__swiper,
+  .feedback__title,
+  .feedback__inner,
+  .faq__title,
+  .faq__items {
+    margin-left: 0;
+  }
+  .steps__inner::before {
+    left: -27px;
+    width: 110%;
+    border-radius: 0;
+  }
+  .steps__item-figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-left: 30px;
+    margin-right: -1px;
+  }
+  .possibs {
+    margin-top: 124px;
+    padding: 70px 0 40px;
+    background-size: cover;
+  }
+  .possibs__img {
+    display: none;
+  }
+  .possibs__btn {
+    margin-top: 40px;
+    margin-left: 51.5%;
+  }
+  .feedback {
+    margin-top: 224px;
+  }
+  .cta {
+    margin-top: 78px;
+    min-height: 802px;
+    background-image: url('/images/cta-tablet-bg.png');
+  }
+  .cta__title {
+    width: 427px;
+  }
+  .cta__text {
+    display: none;
+  }
+  .cta__action,
+  .cta__btn {
+    margin-left: 226px;
+  }
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .footer__copyright {
+    display: none;
+  }
+  .footer__info {
+    margin-left: 170px;
+  }
+  .footer__link + .footer__link {
+    margin-left: 90px;
+  }
+  .footer__text:last-child {
+    margin-left: 185px;
+  }
+  .footer__copyright--tablet {
+    margin-top: 71px;
+    padding: 10px 0;
+    background-color: #0b0b0c;
+    text-align: center;
+    line-height: 28px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 991px) {
+  .header__nav,
+  .header__btn-group {
+    display: none;
+  }
+}

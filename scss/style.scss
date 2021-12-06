@@ -129,7 +129,7 @@ p {
   justify-content: center;
 }
 .header__btn {
-  padding: 8px 26px;
+  padding: 7px 26px;
   text-align: center;
   border: 1px solid #dce0e3;
   border-radius: 12px;
@@ -262,6 +262,9 @@ p {
 // Steps start
 .steps {
   margin-top: 103px;
+}
+.title--purple {
+  color: $purple;
 }
 .steps__inner::before {
   position: absolute;

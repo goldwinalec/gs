@@ -1701,12 +1701,16 @@ p {
     padding: 70px 0 40px;
     background-size: cover;
   }
+  .possibs__items {
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+  }
   .possibs__img {
     display: none;
   }
   .possibs__btn {
     margin-top: 40px;
-    margin-left: 51.5%;
+    margin-left: 52.5%;
   }
   .feedback {
     margin-top: 224px;

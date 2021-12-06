@@ -464,13 +464,44 @@ p {
 .check__loader img {
   display: block;
 }
-.check__input {
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
   padding: 16px;
   width: 399px;
-  height: 56px;
+  min-height: 56px;
   background: #ffffff;
   border-radius: 12px;
   border: none;
+  @extend %montserrat-semibold;
+}
+.tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.tags__item {
+  display: flex;
+  align-items: center;
+  padding: 3px 8px;
+  @extend %roboto-regular;
+  background-color: $purple;
+  color: #fff;
+  line-height: 1;
+  border-radius: 5px;
+}
+.tags__btn {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.tags__btn img {
+  display: block;
+}
+.check__input {
+  border: none;
+  flex-grow: 1;
   @extend %montserrat-semibold;
   outline: transparent;
   appearance: none;
@@ -519,7 +550,7 @@ p {
 .check__result--visible {
   display: block;
 }
-.check__result--visible .check__result--searching {
+.check__result--searching.check__result--visible {
   display: flex;
 }
 .check__result--searching {
@@ -1079,6 +1110,23 @@ p {
   right: -26px;
   top: -14px;
   cursor: pointer;
+}
+.form__row--password {
+  position: relative;
+}
+.form__label--password {
+  position: absolute;
+  display: block;
+  bottom: 12px;
+  right: 10px;
+  cursor: pointer;
+}
+.form__label--password img {
+  display: block;
+}
+.see-password.hidden,
+.hide-password.hidden {
+  display: none;
 }
 // Modals end
 

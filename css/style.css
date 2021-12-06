@@ -68,7 +68,7 @@
   src: url("/fonts/MontserratAlternates-Semibold.woff2") format("woff2"), url("/fonts/MontserratAlternates-Semibold.woff") format("woff");
 }
 
-.found__name, .found__btn, .modal {
+.tags__item, .found__name, .found__btn, .modal {
   font-family: 'Roboto-Regular', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -116,7 +116,7 @@ body, .check__input::placeholder, .possibs__item--soon {
   font-weight: 500;
 }
 
-.features__item-title, .check__input, .possibs__item-title {
+.features__item-title, .tags, .check__input, .possibs__item-title {
   font-family: 'Montserrat-Semibold', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -700,13 +700,61 @@ p {
   display: block;
 }
 
-.check__input {
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2px;
   padding: 16px;
   width: 399px;
-  height: 56px;
+  min-height: 56px;
   background: #ffffff;
   border-radius: 12px;
   border: none;
+}
+
+.tags__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2px;
+}
+
+.tags__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 8px;
+  background-color: #5839ff;
+  color: #fff;
+  line-height: 1;
+  border-radius: 5px;
+}
+
+.tags__btn {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.tags__btn img {
+  display: block;
+}
+
+.check__input {
+  border: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   outline: transparent;
   appearance: none;
   -moz-appearance: none;
@@ -807,7 +855,7 @@ p {
   display: block;
 }
 
-.check__result--visible .check__result--searching {
+.check__result--searching.check__result--visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1525,4 +1573,25 @@ p {
   right: -26px;
   top: -14px;
   cursor: pointer;
+}
+
+.form__row--password {
+  position: relative;
+}
+
+.form__label--password {
+  position: absolute;
+  display: block;
+  bottom: 12px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.form__label--password img {
+  display: block;
+}
+
+.see-password.hidden,
+.hide-password.hidden {
+  display: none;
 }

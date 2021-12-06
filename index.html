@@ -33,15 +33,21 @@
               required
             />
           </div>
-          <div class="form__row">
+          <div class="form__row form__row--password">
             <label class="form__label">Придумайте пароль</label
             ><input
               type="password"
-              class="form__input"
+              class="form__input form__input--password"
               minlength="8"
               placeholder="****"
               required
             />
+            <label class="form__label--password see-password">
+              <img src="/images/see-password.svg" alt="Посмотреть пароль" class="form__label--see">
+            </label>
+            <label class="form__label--password hide-password">
+              <img src="/images/hide-password.svg" alt="Посмотреть пароль" class="form__label--hide">
+            </label>
           </div>
           <div class="form__submit-group">
             <button class="form__btn">Зарегистрироваться</button>
@@ -90,15 +96,21 @@
               required
             />
           </div>
-          <div class="form__row">
+          <div class="form__row form__row--password">
             <label class="form__label">Укажите пароль</label
             ><input
               type="password"
-              class="form__input"
+              class="form__input form__input--password"
               minlength="8"
               placeholder="****"
               required
             />
+            <label class="form__label--password see-password">
+              <img src="/images/see-password.svg" alt="Посмотреть пароль" class="form__label--see">
+            </label>
+            <label class="form__label--password hide-password hidden">
+              <img src="/images/hide-password.svg" alt="Посмотреть пароль" class="form__label--hide">
+            </label>
           </div>
           <div class="form__submit-group">
             <button class="form__btn form__btn--login">Войти</button>
@@ -399,12 +411,15 @@
             </h2>
             <form class="check__form">
               <div class="check__form-wrapper">
-                <input
-                  class="check__input"
-                  type="text"
-                  id="input"
-                  placeholder="@youraccount"
-                />
+                <div class="check__form-tags tags">
+                  <ul class="tags__list"></ul>
+                  <input
+                    class="check__input"
+                    type="text"
+                    id="input"
+                    placeholder="@youraccount"
+                  />
+                </div>
                 <label class="check__label check__label--visible"
                   >Введите логин аккаунта и нажмите “Проверить”</label
                 >
@@ -445,7 +460,7 @@
                       </div>
                       <button class="found__btn">Выбрать</button>
                     </div>
-                    <div class="found__item found__item--add">
+                    <div class="found__item">
                       <img
                         class="found__img"
                         src="/images/found-item-3.jpg"
@@ -472,7 +487,7 @@
                   </div>
                 </div>
               </div>
-              <button class="check__btn" type="submit" disabled>
+              <button class="check__btn" disabled>
                 Проверить
               </button>
             </form>
@@ -599,7 +614,7 @@
               </div>
               <!-- <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div> -->
-              <a href="#" class="possibs__btn btn">попробовать бесплатно</a>
+              <a href="#" class="possibs__btn btn" id="register">попробовать бесплатно</a>
             </div>
           </div>
         </div>

@@ -411,23 +411,20 @@
             </h2>
             <form class="check__form">
               <div class="check__form-wrapper">
-                <div class="check__form-tags tags">
-                  <ul class="tags__list"></ul>
-                  <input
-                    class="check__input"
-                    type="text"
-                    id="input"
-                    placeholder="@youraccount"
-                  />
-                </div>
-                <label class="check__label check__label--visible"
+                <input
+                  class="check__input"
+                  type="text"
+                  id="input"
+                  placeholder="@youraccount"
+                />
+                <label class="check__label"
                   >Введите логин аккаунта и нажмите “Проверить”</label
                 >
-                <div class="check__results-wrapper">
-                  <div class="check__result check__result--error">
+                <div class="check__results-wrapper hidden">
+                  <div class="check__result check__result--error hidden">
                     Аккаунты не найдены
                   </div>
-                  <div class="check__result check__result--searching">
+                  <div class="check__result check__result--searching hidden">
                     <img
                       class="check__loader check__loader--gray"
                       src="/images/loader-gray.svg"
@@ -435,7 +432,7 @@
                     />
                     Идет поиск, подождите...
                   </div>
-                  <div class="check__result check__result--found found">
+                  <div class="check__result check__result--found found hidden">
                     <div class="found__item">
                       <img
                         class="found__img"
@@ -487,20 +484,20 @@
                   </div>
                 </div>
               </div>
-              <button class="check__btn" disabled>
+              <button class="check__btn" type="submit" disabled>
                 Проверить
               </button>
             </form>
-            <div class="check__process">
+            <div class="check__process hidden">
               <span class="check__process-text"
                 >Получаем данные из инстаграм...</span
               >
               <span class="check__process-loader"
-                ><img src="" alt="" class="check__img"
+                ><img src="/images/loader-blue.svg" alt="" class="check__img"
               /></span>
             </div>
           </div>
-          <div class="check__inner check__inner--done">
+          <div class="check__inner check__inner--done hidden">
             <div class="check__info">
               <div class="check__info-account">
                 <img
@@ -509,33 +506,31 @@
                   alt=""
                   class="check__info-img"
                 />
-                <span class="check__account"
+                <div class="check__account"
                   >ronaldinho
                   <span class="check__account-name"
                     >Ronaldo de Assis Moreira</span
                   >
-                </span>
+                </div>
               </div>
               <div class="check__info-numbers">
                 <div class="check__info-item">
-                  <span class="check__info-num"
-                    >+
-                    <div class="check__number">153</div>
-                  </span>
-                  <span class="check__info-text">подписчиков за месяц</span>
+                  <div class="check__info-num"
+                    >+<span class="check__number">153</span>
+                  </div>
+                  <div class="check__info-text">подписчиков за месяц</div>
                 </div>
                 <div class="check__info-item">
-                  <span class="check__info-num"
-                    >+
-                    <div class="check__number">4 366</div>
-                  </span>
-                  <span class="check__info-text">подписчиков за год</span>
+                  <div class="check__info-num"
+                    >+<span class="check__number">4 366</span>
+                  </div>
+                  <div class="check__info-text">подписчиков за год</div>
                 </div>
               </div>
             </div>
-            <a href="" class="check__info-btn btn"
+            <button class="check__info-btn btn"
               >Начать продвижение бесплатно
-            </a>
+          </button>
           </div>
         </div>
       </section>

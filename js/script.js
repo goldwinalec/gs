@@ -141,119 +141,119 @@ btnsSeePass.forEach((btn) => {
 
 ////////////////////////////////////////////
 // Check Instagram account
-const checkForm = document.querySelector('.check__form');
-const checkInput = document.querySelector('.check__input');
-const checkLabel = document.querySelector('.check__label');
-const tagsWrapper = document.querySelector('.tags__list');
-const items = [...document.querySelectorAll('.found__item')];
-const resultWrapper = document.querySelector('.check__results-wrapper');
-const error = document.querySelector('.check__result--error');
-const searching = document.querySelector('.check__result--searching');
-const found = document.querySelector('.check__result--found');
-const gettingData = document.querySelector('.check__process');
-const doneSearching = document.querySelector('.check__inner--done');
-const btnsChoose = document.querySelectorAll('.found__btn');
-const btnStart = document.querySelector('.check__info-btn');
-const checkBtn = document.querySelector('.check__btn');
+// const checkForm = document.querySelector('.check__form');
+// const checkInput = document.querySelector('.check__input');
+// const checkLabel = document.querySelector('.check__label');
+// const tagsWrapper = document.querySelector('.tags__list');
+// const items = [...document.querySelectorAll('.found__item')];
+// const resultWrapper = document.querySelector('.check__results-wrapper');
+// const error = document.querySelector('.check__result--error');
+// const searching = document.querySelector('.check__result--searching');
+// const found = document.querySelector('.check__result--found');
+// const gettingData = document.querySelector('.check__process');
+// const doneSearching = document.querySelector('.check__inner--done');
+// const btnsChoose = document.querySelectorAll('.found__btn');
+// const btnStart = document.querySelector('.check__info-btn');
+// const checkBtn = document.querySelector('.check__btn');
 
-const hideResults = function () {
-  searching.classList.remove('check__result--visible');
-  found.classList.remove('check__result--visible');
-  error.classList.remove('check__result--visible');
-  resultWrapper.classList.remove('check__results-wrapper--visible');
-  checkBtn.disabled = true;
-};
+// const hideResults = function () {
+//   searching.classList.remove('check__result--visible');
+//   found.classList.remove('check__result--visible');
+//   error.classList.remove('check__result--visible');
+//   resultWrapper.classList.remove('check__results-wrapper--visible');
+//   checkBtn.disabled = true;
+// };
 
-checkForm.addEventListener('submit', function (e) {
-  e.preventDefault();
-});
+// checkForm.addEventListener('submit', function (e) {
+//   e.preventDefault();
+// });
 
-checkInput.addEventListener('keyup', function (e) {
-  hideResults();
-  if (checkInput.value.length > 2) {
-    searching.classList.add('check__result--visible');
-    resultWrapper.classList.add('check__results-wrapper--visible');
-    // setTimeout(function () {
-    //   error.classList.add('check__result--visible');
-    //   searching.classList.remove('check__result--visible');
-    // }, 1000);
+// checkInput.addEventListener('keyup', function (e) {
+//   hideResults();
+//   if (checkInput.value.length > 2) {
+//     searching.classList.add('check__result--visible');
+//     resultWrapper.classList.add('check__results-wrapper--visible');
+//     // setTimeout(function () {
+//     //   error.classList.add('check__result--visible');
+//     //   searching.classList.remove('check__result--visible');
+//     // }, 1000);
 
-    setTimeout(function () {
-      found.classList.add('check__result--visible');
-      searching.classList.remove('check__result--visible');
+//     setTimeout(function () {
+//       found.classList.add('check__result--visible');
+//       searching.classList.remove('check__result--visible');
 
-      btnsChoose.forEach((btn) => {
-        const onMouseOut = function () {
-          btn.textContent = 'Добавлен';
-        };
+//       btnsChoose.forEach((btn) => {
+//         const onMouseOut = function () {
+//           btn.textContent = 'Добавлен';
+//         };
 
-        const onMouseOver = function () {
-          btn.textContent = 'Удалить';
-          btn.addEventListener('mouseout', onMouseOut);
-        };
+//         const onMouseOver = function () {
+//           btn.textContent = 'Удалить';
+//           btn.addEventListener('mouseout', onMouseOut);
+//         };
 
-        const deleteAccount = function () {
-          btn.parentElement.classList.remove('found__item--add');
-          btn.textContent = 'Выбрать';
-          if (!tagsWrapper.firstChild) checkBtn.disabled = true;
+//         const deleteAccount = function () {
+//           btn.parentElement.classList.remove('found__item--add');
+//           btn.textContent = 'Выбрать';
+//           if (!tagsWrapper.firstChild) checkBtn.disabled = true;
 
-          btn.removeEventListener('mouseenter', onMouseOver);
-          btn.removeEventListener('mouseout', onMouseOut);
-          btn.removeEventListener('click', deleteAccount);
-        };
+//           btn.removeEventListener('mouseenter', onMouseOver);
+//           btn.removeEventListener('mouseout', onMouseOut);
+//           btn.removeEventListener('click', deleteAccount);
+//         };
 
-        btn.addEventListener('click', function (e) {
-          e.preventDefault();
-          btn.parentElement.classList.add('found__item--add');
+//         btn.addEventListener('click', function (e) {
+//           e.preventDefault();
+//           btn.parentElement.classList.add('found__item--add');
 
-          if (btn.parentElement.classList.contains('found__item--add')) {
-            const id = (Date.now() + '').slice(-10);
-            console.log(id);
-            const name =
-              btn.previousSibling.previousSibling.innerText.split('\n');
-            const html = `<li class="tags__item id="${id}">${name[0]}<span id="${id}" class="tags__btn"><img src="/images/close-tag.svg" alt=""></span></li>`;
-            btn.id = id;
-            tagsWrapper.insertAdjacentHTML('beforeEnd', html);
+//           if (btn.parentElement.classList.contains('found__item--add')) {
+//             const id = (Date.now() + '').slice(-10);
+//             console.log(id);
+//             const name =
+//               btn.previousSibling.previousSibling.innerText.split('\n');
+//             const html = `<li class="tags__item id="${id}">${name[0]}<span id="${id}" class="tags__btn"><img src="/images/close-tag.svg" alt=""></span></li>`;
+//             btn.id = id;
+//             tagsWrapper.insertAdjacentHTML('beforeEnd', html);
 
-            btn.textContent = 'Добавлен';
-            btn.addEventListener('mouseenter', onMouseOver);
+//             btn.textContent = 'Добавлен';
+//             btn.addEventListener('mouseenter', onMouseOver);
 
-            const deleteTagBtns = [...document.querySelectorAll('.tags__btn')];
-            deleteTagBtns.forEach((tag) => {
-              tag.addEventListener('click', function () {
-                tag.parentElement.remove();
-                if (!tagsWrapper.firstChild) {
-                  hideResults();
-                  items.forEach((item) => {
-                    item.classList.remove('found__item--add');
-                  });
-                  deleteAccount();
-                }
-                btnsChoose.forEach((btn) => {
-                  btn.textContent = 'Выбрать';
-                });
-              });
-            });
-            checkInput.value = '';
-            checkInput.placeholder = '';
-            if (tagsWrapper.firstChild) checkBtn.disabled = false;
-            if (!tagsWrapper.firstChild) {
-              hideResults();
-              items.forEach((item) => {
-                item.classList.remove('found__item--add');
-              });
-              deleteAccount();
-            }
-            btn.addEventListener('click', deleteAccount);
-          } else {
-            btn.textContent = 'Выбрать';
-            btn.removeEventListener('mouseenter', onMouseOver);
-            btn.removeEventListener('mouseout', onMouseOut);
-          }
-        });
-      });
-    }, 1000);
-  } else {
-    hideResults();
-  }
-});
+//             const deleteTagBtns = [...document.querySelectorAll('.tags__btn')];
+//             deleteTagBtns.forEach((tag) => {
+//               tag.addEventListener('click', function () {
+//                 tag.parentElement.remove();
+//                 if (!tagsWrapper.firstChild) {
+//                   hideResults();
+//                   items.forEach((item) => {
+//                     item.classList.remove('found__item--add');
+//                   });
+//                   deleteAccount();
+//                 }
+//                 btnsChoose.forEach((btn) => {
+//                   btn.textContent = 'Выбрать';
+//                 });
+//               });
+//             });
+//             checkInput.value = '';
+//             checkInput.placeholder = '';
+//             if (tagsWrapper.firstChild) checkBtn.disabled = false;
+//             if (!tagsWrapper.firstChild) {
+//               hideResults();
+//               items.forEach((item) => {
+//                 item.classList.remove('found__item--add');
+//               });
+//               deleteAccount();
+//             }
+//             btn.addEventListener('click', deleteAccount);
+//           } else {
+//             btn.textContent = 'Выбрать';
+//             btn.removeEventListener('mouseenter', onMouseOver);
+//             btn.removeEventListener('mouseout', onMouseOut);
+//           }
+//         });
+//       });
+//     }, 1000);
+//   } else {
+//     hideResults();
+//   }
+// });

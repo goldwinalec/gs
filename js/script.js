@@ -54,7 +54,7 @@ const html = document.querySelector('html');
 const overlay = document.querySelector('.overlay');
 const btnsOpenLogin = document.querySelectorAll('#login');
 const btnsOpenRegister = document.querySelectorAll('#register');
-const btnOpenFeedback = document.querySelector('#feedback-btn');
+const btnsOpenFeedback = document.querySelectorAll('#feedback-btn');
 const btnOpenPassword = document.querySelector('#password');
 const btnsClose = document.querySelectorAll('.close__btn');
 const btnsSeePass = document.querySelectorAll('.see-password');
@@ -83,6 +83,14 @@ const openModal = function () {
   overlay.classList.add('overlay--visible');
   modalWrapper.classList.add('modal--visible');
   html.classList.add('page--disabled');
+  toggleLine.forEach((line) =>
+    line.classList.remove('header__mobile-line--active')
+  );
+  headerLine.classList.remove('header__line-mobile--visible');
+  headerLogo.classList.remove('header__logo--invisible');
+  menuLogo.classList.remove('header__logo-menu--visible');
+  headerNav.classList.remove('header__nav--visible');
+  btnGroup.classList.remove('header__btn-group--visible');
 };
 
 btnsOpenLogin.forEach((btn) => {
@@ -109,10 +117,12 @@ btnOpenPassword.addEventListener('click', function (e) {
   modalPassword.classList.add('modal--visible');
 });
 
-btnOpenFeedback.addEventListener('click', function (e) {
-  e.preventDefault();
-  openModal();
-  modalFeedback.classList.add('modal--visible');
+btnsOpenFeedback.forEach((btn) => {
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+    openModal();
+    modalFeedback.classList.add('modal--visible');
+  });
 });
 
 overlay.addEventListener('click', function (e) {
@@ -189,4 +199,42 @@ window.addEventListener('load', function () {
   if (window.screen.width <= 769) {
     enableSwiper();
   }
+});
+
+//////////////////////////////////////
+// Mobile menu
+const toggleNav = document.querySelector('.header__mobile-btn');
+const toggleLine = document.querySelectorAll('.header__mobile-line');
+const headerNav = document.querySelector('.header__nav');
+const headerLine = document.querySelector('.header__line-mobile');
+const headerLogo = document.querySelector('.header__logo');
+const menuLogo = document.querySelector('.header__logo-menu');
+const navLink = document.querySelectorAll('.header__link');
+const btnGroup = document.querySelector('.header__btn-group');
+const btns = document.querySelectorAll('header__btn');
+
+toggleNav.addEventListener('click', function () {
+  toggleLine.forEach((line) =>
+    line.classList.toggle('header__mobile-line--active')
+  );
+  headerLine.classList.toggle('header__line-mobile--visible');
+  headerNav.classList.toggle('header__nav--visible');
+  headerLogo.classList.toggle('header__logo--invisible');
+  menuLogo.classList.toggle('header__logo-menu--visible');
+  btnGroup.classList.toggle('header__btn-group--visible');
+  html.classList.toggle('page--disabled');
+});
+
+navLink.forEach((link) => {
+  link.addEventListener('click', function () {
+    toggleLine.forEach((line) =>
+      line.classList.remove('header__mobile-line--active')
+    );
+    headerLine.classList.remove('header__line-mobile--visible');
+    headerLogo.classList.remove('header__logo--invisible');
+    menuLogo.classList.remove('header__logo-menu--visible');
+    headerNav.classList.remove('header__nav--visible');
+    btnGroup.classList.remove('header__btn-group--visible');
+    html.classList.remove('page--disabled');
+  });
 });

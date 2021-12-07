@@ -111,6 +111,12 @@ p {
   justify-content: space-between;
   color: $black;
 }
+.header__logo-menu {
+  display: none;
+}
+.header__mobile-btn {
+  display: none;
+}
 .header__list {
   display: flex;
 }
@@ -137,6 +143,9 @@ p {
 }
 .header__btn + .header__btn {
   margin-left: 10px;
+}
+.header__btn--mobile {
+  display: none;
 }
 .header__btn:hover {
   background-color: $blue;
@@ -1053,7 +1062,7 @@ p {
   color: $black;
   font-size: 15px;
   transform: translateX(-50%);
-  z-index: 5;
+  z-index: 6;
   overflow: hidden;
 }
 @media (max-width: 1440px) {

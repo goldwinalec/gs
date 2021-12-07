@@ -125,7 +125,7 @@
     background-position: 60% 0;
   }
   .hero__title-img {
-    width: 370px;
+    width: 335px;
     margin-left: -25px;
   }
   .hero__title-text {
@@ -232,8 +232,9 @@
   }
   .check {
     margin-top: 106px;
-    padding: 30px 0;
-    background-color: #fff5fd;
+    padding: 116px 0 99px;
+    background-image: url("/images/check-mobile-bg.svg");
+    background-size: 100% 100%;
   }
   .check__inner {
     padding: 0;
@@ -285,6 +286,18 @@
     margin-top: 10px;
     margin-left: 0;
     width: 260px;
+  }
+  .found__btn {
+    display: none;
+  }
+  .found__text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .check__results-wrapper {
+    z-index: 3;
   }
   .possibs__items {
     margin-top: 40px;
@@ -433,6 +446,7 @@
     padding-bottom: 132px;
     background-image: url("/images/hero-bg-mobile.svg");
     background-position: 0px -30px;
+    background-size: 100% 100%;
   }
   .hero__inner {
     margin-left: 0;
@@ -491,6 +505,34 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .possibs__inner {
+    display: block;
+  }
+  .possibs__items {
+    -webkit-column-count: 1;
+            column-count: 1;
+    background-color: #fff;
+  }
+  .possibs__item {
+    background-color: #fff;
+  }
+  .possibs__item + .possibs__item {
+    margin: 0;
+  }
+  .possibs__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .possibs__btn-next {
+    margin-left: 10px;
+  }
   .faq {
     margin-top: 284px;
   }
@@ -539,12 +581,35 @@
     top: -11px;
     left: -10px;
   }
+  .check__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .check__info-numbers {
+    margin-top: 10px;
+  }
+  .check__info-btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 370px) {
   .btn {
     padding: 20px;
     font-size: 13px;
+  }
+  .header__logo {
+    width: 195px;
   }
   .cta__title {
     width: 100%;

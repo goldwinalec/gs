@@ -759,6 +759,20 @@ p {
 .possibs__btn {
   margin-top: 68px;
 }
+@media (min-width: 769px) {
+  .swiper-wrapper {
+    position: static;
+    width: unset;
+    height: unset;
+    z-index: 1;
+    display: block;
+    transition-property: none;
+    box-sizing: border-box;
+  }
+  .possibs__controls {
+    display: none;
+  }
+}
 // Possibs end
 
 // Feedback start

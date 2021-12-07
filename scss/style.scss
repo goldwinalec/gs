@@ -161,8 +161,10 @@ p {
   @extend %montserratal-medium;
   color: $black;
 }
+.hero__title-img--mobile {
+  display: none;
+}
 .hero__title-img {
-  display: block;
   margin-bottom: -13px;
   margin-left: -44px;
 }
@@ -179,7 +181,6 @@ p {
   justify-content: flex-start;
   margin-top: 37px;
 }
-
 .hero__btn-text {
   position: relative;
   display: block;
@@ -204,6 +205,12 @@ p {
 .hero__btn-text--bold {
   display: block;
   @extend %montserrat-bold;
+}
+.hero__btn--mobile {
+  display: none;
+}
+.hero__phone--mobile {
+  display: none;
 }
 // Hero end
 
@@ -902,6 +909,9 @@ p {
 .faq__answer-text {
   padding-top: 20px;
 }
+.faq__btn--mobile {
+  display: none;
+}
 // FAQ end
 
 // CTA start
@@ -1168,4 +1178,5 @@ p {
 .hidden {
   display: none;
 }
+
 @import 'media';

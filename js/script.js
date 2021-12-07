@@ -37,9 +37,14 @@ const feedbackSwiper = new Swiper('.feedback__swiper', {
 
 ////////////////////////////////////////////
 // FAQ section
-
-new Accordion('.faq__items', {
+const container = document.querySelector('.faq__items');
+const accordion = new Accordion(container, {
   openOnInit: [2],
+});
+
+const buttons = container.querySelectorAll('.faq__btn--mobile');
+[...buttons].map((button, idx) => {
+  button.addEventListener('click', () => accordion.close(idx));
 });
 
 ////////////////////////////////////////////

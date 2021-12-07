@@ -180,7 +180,7 @@
   }
   .header__nav--visible {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 74px;
     left: 0;
     bottom: 0;
@@ -193,7 +193,7 @@
     z-index: 5;
   }
   .header__btn-group--visible {
-    position: absolute;
+    position: fixed;
     bottom: 60px;
     left: 0;
     right: 0;
@@ -590,7 +590,7 @@
   }
   .possibs__btn-prev:hover,
   .possibs__btn-next:hover {
-    background-color: $blue;
+    background-color: #397dff;
     box-shadow: none;
   }
   .possibs__item.swiper-slide-active {

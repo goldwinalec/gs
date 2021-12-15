@@ -1,69 +1,76 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Roboto-Regular";
+  font-family: 'Roboto-Regular';
   font-weight: 400;
   font-display: swap;
   src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto-Medium";
+  font-family: 'Roboto-Italic';
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Roboto-Italic.woff2") format("woff2"), url("/fonts/Roboto-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
   font-weight: 500;
   font-display: swap;
   src: url("/fonts/Roboto-Medium.woff2") format("woff2"), url("/fonts/Roboto-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto-Bold";
+  font-family: 'Roboto-Bold';
   font-weight: 700;
   font-display: swap;
   src: url("/fonts/Roboto-Bold.woff2") format("woff2"), url("/fonts/Roboto-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat-Regular";
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
   font-display: swap;
   src: url("/fonts/Montserrat-Regular.woff2") format("woff2"), url("/fonts/Montserrat-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat-Medium";
+  font-family: 'Montserrat-Medium';
   font-weight: 500;
   font-display: swap;
   src: url("/fonts/Montserrat-Medium.woff2") format("woff2"), url("/fonts/Montserrat-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat-Semibold";
+  font-family: 'Montserrat-Semibold';
   font-weight: 600;
   font-display: swap;
   src: url("/fonts/Montserrat-Semibold.woff2") format("woff2"), url("/fonts/Montserrat-Semibold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat-Bold";
+  font-family: 'Montserrat-Bold';
   font-weight: 700;
   font-display: swap;
   src: url("/fonts/Montserrat-Bold.woff2") format("woff2"), url("/fonts/Montserrat-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Montserrat-ExtraBold";
+  font-family: 'Montserrat-ExtraBold';
   font-weight: 800;
   font-display: swap;
   src: url("/fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("/fonts/Montserrat-ExtraBold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "MontserratAlternates-Medium";
+  font-family: 'MontserratAlternates-Medium';
   font-weight: 500;
   font-display: swap;
   src: url("/fonts/MontserratAlternates-Medium.woff2") format("woff2"), url("/fonts/MontserratAlternates-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "MontserratAlternates-Semibold";
+  font-family: 'MontserratAlternates-Semibold';
   font-weight: 600;
   font-display: swap;
   src: url("/fonts/MontserratAlternates-Semibold.woff2") format("woff2"), url("/fonts/MontserratAlternates-Semibold.woff") format("woff");
@@ -73,6 +80,34 @@
 .check__info-text, .modal {
   font-family: 'Roboto-Regular', sans-serif;
   font-style: normal;
+  font-weight: 400;
+}
+
+.form__input::-webkit-input-placeholder,
+.form__textarea::-webkit-input-placeholder {
+  font-family: 'Roboto-Italic', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.form__input:-ms-input-placeholder,
+.form__textarea:-ms-input-placeholder {
+  font-family: 'Roboto-Italic', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.form__input::-ms-input-placeholder,
+.form__textarea::-ms-input-placeholder {
+  font-family: 'Roboto-Italic', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  font-family: 'Roboto-Italic', sans-serif;
+  font-style: italic;
   font-weight: 400;
 }
 
@@ -657,7 +692,7 @@ p {
 }
 
 .check {
-  margin-top: 125px;
+  margin-top: 75px;
 }
 
 .check__inner {
@@ -1165,6 +1200,7 @@ p {
 .feedback__inner {
   position: relative;
   margin-top: 59px;
+  overflow: hidden;
 }
 
 .feedback__title::before {
@@ -1278,7 +1314,7 @@ p {
 .faq__question {
   position: relative;
   padding: 18px 100px 18px 40px;
-  width: 100%;
+  max-width: 1030px;
   background-color: #f3f4f5;
   border-radius: 24px;
   font-size: 20px;
@@ -1348,8 +1384,7 @@ p {
 }
 
 .cta {
-  margin-top: 106px;
-  padding-bottom: 240px;
+  margin-top: 56px;
   min-height: 890px;
   background-image: url("/images/cta-bg.png");
   background-repeat: no-repeat;
@@ -1364,7 +1399,7 @@ p {
 }
 
 .cta__title {
-  margin-top: 301px;
+  margin-top: 237px;
   margin-left: 43px;
 }
 
@@ -1454,6 +1489,10 @@ p {
   margin-left: 154px;
   font-size: 13px;
   line-height: 2.15;
+}
+
+.footer__copyright--tablet {
+  display: none;
 }
 
 .footer__text {
@@ -1565,22 +1604,22 @@ p {
 
 .form__input::-webkit-input-placeholder,
 .form__textarea::-webkit-input-placeholder {
-  color: #161718;
+  color: #93999e;
 }
 
 .form__input:-ms-input-placeholder,
 .form__textarea:-ms-input-placeholder {
-  color: #161718;
+  color: #93999e;
 }
 
 .form__input::-ms-input-placeholder,
 .form__textarea::-ms-input-placeholder {
-  color: #161718;
+  color: #93999e;
 }
 
 .form__input::placeholder,
 .form__textarea::placeholder {
-  color: #161718;
+  color: #93999e;
 }
 
 .form__textarea {
@@ -1705,7 +1744,7 @@ p {
     width: 593px;
   }
   .features {
-    margin-top: 110px;
+    margin-top: 60px;
   }
   .features__inner,
   .steps__inner,
@@ -1746,7 +1785,7 @@ p {
     margin-right: -1px;
   }
   .possibs {
-    margin-top: 124px;
+    margin-top: 74px;
     padding: 70px 0 40px;
     background-size: cover;
   }
@@ -1796,6 +1835,7 @@ p {
     margin-left: 185px;
   }
   .footer__copyright--tablet {
+    display: block;
     margin-top: 71px;
     padding: 10px 0;
     background-color: #0b0b0c;
@@ -1818,7 +1858,7 @@ p {
   }
   .header__line-mobile {
     display: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     top: 0;
@@ -1889,7 +1929,7 @@ p {
   }
   .header__nav--visible {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 74px;
     left: 0;
     bottom: 0;
@@ -1902,7 +1942,7 @@ p {
     z-index: 5;
   }
   .header__btn-group--visible {
-    position: absolute;
+    position: fixed;
     bottom: 60px;
     left: 0;
     right: 0;
@@ -2078,7 +2118,7 @@ p {
     bottom: 20px;
   }
   .check {
-    margin-top: 106px;
+    margin-top: 56px;
     padding: 116px 0 99px;
     background-image: url("/images/check-mobile-bg.svg");
     background-size: 100% 100%;
@@ -2356,8 +2396,10 @@ p {
     display: block;
   }
   .possibs__items {
-    -webkit-column-count: 1;
-            column-count: 1;
+    -webkit-column-count: 0;
+            column-count: 0;
+    -webkit-column-gap: 0;
+            column-gap: 0;
     background-color: #fff;
   }
   .possibs__item {
@@ -2416,17 +2458,20 @@ p {
   .possibs {
     padding-bottom: 0;
   }
-  .faq {
-    margin-top: 284px;
+  .feedback__inner {
+    padding-bottom: 80px;
   }
   .feedback__controls {
     top: unset;
     right: unset;
     left: 0;
-    bottom: -80px;
+    bottom: 0;
+  }
+  .faq__item {
+    position: relative;
   }
   .cta {
-    margin-top: 34px;
+    margin-top: -66px;
     padding-top: 287px;
     padding-bottom: 226px;
     background-image: url("/images/cta-mobile-bg.png");
@@ -2434,35 +2479,28 @@ p {
   }
   .cta__title {
     display: block;
-    margin-top: 0;
+    margin-top: -15px;
     -webkit-filter: drop-shadow(3px 2px 0px #ff4b88);
             filter: drop-shadow(3px 2px 0px #ff4b88);
-  }
-  .cta__action {
-    display: inline;
-    padding-right: 30px;
-    background-color: rgba(22, 23, 24, 0.6);
-    -webkit-box-shadow: -10px 0 0 rgba(22, 23, 24, 0.6), 10px 0 0 rgba(22, 23, 24, 0.6);
-            box-shadow: -10px 0 0 rgba(22, 23, 24, 0.6), 10px 0 0 rgba(22, 23, 24, 0.6);
-    line-height: 1.36;
   }
 }
 
 @media (max-width: 568px) {
-  .steps__item-img {
-    width: 200px;
+  .steps__container {
+    padding: 0 30px;
+  }
+  .steps__title,
+  .steps__text,
+  .steps__item-wrapper {
+    padding-left: 15px;
   }
   .steps__item-figure {
     -webkit-margin-start: 0;
             margin-inline-start: 0;
   }
-  .steps__item-figure::before {
-    width: 215px;
-    height: 189px;
-    background-size: 215px 189px;
-    background-repeat: no-repeat;
-    top: -11px;
-    left: -10px;
+  .steps__item-img {
+    -webkit-box-shadow: 0px 10px 18px rgba(153, 160, 185, 0.35);
+            box-shadow: 0px 10px 18px rgba(153, 160, 185, 0.35);
   }
   .check__info {
     -webkit-box-orient: vertical;
@@ -2485,12 +2523,12 @@ p {
     font-size: 12px;
   }
   .modal {
-    padding: 15px;
+    padding: 20px 15px 20px 15px;
     max-width: 95%;
   }
   .close__btn {
     right: 0;
-    top: 0;
+    top: -5px;
   }
   .form__submit-group {
     -webkit-box-orient: vertical;
@@ -2515,6 +2553,25 @@ p {
   .social {
     margin-top: 10px;
   }
+  .cta__action {
+    display: inline;
+    padding-right: 30px;
+    background-color: rgba(22, 23, 24, 0.6);
+    -webkit-box-shadow: -10px 0 0 rgba(22, 23, 24, 0.6), 10px 0 0 rgba(22, 23, 24, 0.6);
+            box-shadow: -10px 0 0 rgba(22, 23, 24, 0.6), 10px 0 0 rgba(22, 23, 24, 0.6);
+    line-height: 1.36;
+  }
+}
+
+@media (max-width: 389px) {
+  .steps__container {
+    padding: 0 15px;
+  }
+  .steps__title,
+  .steps__text,
+  .steps__item-wrapper {
+    padding-left: 30px;
+  }
 }
 
 @media (max-width: 370px) {
@@ -2527,5 +2584,19 @@ p {
   }
   .cta__title {
     width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .steps__item-img {
+    width: 200px;
+  }
+  .steps__item-figure::before {
+    width: 215px;
+    height: 189px;
+    background-size: 215px 189px;
+    background-repeat: no-repeat;
+    top: -11px;
+    left: -10px;
   }
 }

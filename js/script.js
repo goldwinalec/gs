@@ -6,10 +6,10 @@
 const stepsSwiper = new Swiper('.swiper', {
   lazy: true,
   loop: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -25,10 +25,10 @@ const stepsSwiper = new Swiper('.swiper', {
 
 const feedbackSwiper = new Swiper('.feedback__swiper', {
   loop: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true,
-  },
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true,
+  // },
   navigation: {
     nextEl: '.feedback-button-next',
     prevEl: '.feedback-button-prev',
@@ -173,10 +173,7 @@ const enableSwiper = function () {
   possibs = new Swiper('.possibs__swiper', {
     slidesPerView: 1,
     loop: true,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true,
-    },
+    effect: 'slide',
     breakpoints: {
       768: {
         slidesPerView: 2,
